@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food Delivery Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- javascript -->
+  <script src="./assets/vendors/jquery.min.js"></script>
+  <script src="./assets/owlcarousel/owl.carousel.js"></script>
+
+  <!-- Owl Stylesheets -->
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+  <!-- header sectio -->
+  <header class="main-header">
+    <div class="container">
+      <div class="desktop-header row header-row align-items-center">
+        <div class="col-lg-4">
+          <a class="main-logo" href="#"><img src="./img/logo.png" alt="" /></a>
+        </div>
+        <div class="col-lg-4 header-menu">
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">List</a></li>
+            <li><a href="#">Other Page</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-end">
+          <a class="btn primary-bg" href="#" role="button">Sign up</a>
+          <a class="btn primary-bg" href="#" role="button">Log in</a>
+        </div>
+      </div>
+
+      <!-- mobile header -->
+
+      <div class="mobile-header">
+        <div class="row header-row align-items-center">
+          <div class="col-6">
+            <a class="main-logo" href="#"><img src="./img/logo.png" alt="" /></a>
+          </div>
+
+          <div class="col-6 text-end">
+            <button class="btn primary-bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+              id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                  Food Delivery Template
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="mobile-header-menu">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">Other Page</a></li>
+                  </ul>
+                </div>
+                <div class="text-end mt-2">
+                  <a class="btn primary-bg" href="#" role="button">Sign up</a>
+                  <a class="btn primary-bg" href="#" role="button">Log in</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- hero sectio -->
+  <section class="hero">
+    <div class="hero-content container">
+      <h2>Enjoy Your Fresh & <br />Delicious Food</h2>
+      <div class="hero-from">
+        <input type="text" name="" id="" placeholder="Location" />
+        <button class="primary-bg" type="submit">Search</button>
+      </div>
+      <p>Trending: Sushi, Burgher, Pizza, Chainese</p>
+    </div>
+  </section>
+
+  <!--Hero area end-->
+  <div class="hero_area">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <!--Hero area end-->
+
+  <!-- Categories Section-->
+  <section class="categories">
+    <div class="container">
+      <div class="row popular-categories">
+        <div>
+          <img class="pc-icon" src="./img/menu icon 1.png" alt="" />
+          <h2>Popular Categories</h2>
+        </div>
+        
+        <div class="large-12 columns pc-categories-list">
+          <div class="owl-carousel categories-carousel owl-theme">
+            <div class="item"> <a href="#"><img src="./img/1.png" alt="" />
+                <p>Wine</p>
+              </a> </div>
+            <div class="item"> <a href="#"><img src="./img/Cake.png" alt="" />
+                <p>Cake</p>
+              </a> </div>
+            <div class="item"> <a href="#"><img src="./img/Doughnut.png" alt="" />
+                <p>Doughnut</p>
+              </a> </div>
+            <div class="item"> <a href="#"><img src="./img/Burger.png" alt="" />
+                <p>Burger</p>
+              </a> </div>
+            <div class="item"> <a href="#"><img src="./img/Tacos.png" alt="" />
+                <p>Tacos</p>
+              </a></div>
+            <div class="item"> <a href="#"><img src="./img/1.png" alt="" />
+                <p>Wine</p>
+              </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section End-->
+
+
+  <!-- Restaurent Section-->
+  <section class="restaurent container">
+    <div class="restaurent-content">
+      <h2>Discover Top Restaurent</h2>
+
+
+      <div class="large-12 columns restaurent-list">
+        <div class="owl-carousel restaurent-carousel owl-theme">
+
+          <div class="item">
+            <div class="m-2 restaurent-cart">
+              <p class="discount">20% OFF</p>
+              <img src="./img/Rectangle 3.png" class="card-img-top" alt="..." />
+              <div class="card-body" style="padding: 10px">
+                <h5 class="card-title" style="margin-bottom: 10px; color: #000">
+                  Cake House
+                </h5>
+                <p style="
+                              margin-bottom: 10px;
+                              color: rgba(11, 11, 11, 0.91);
+                              font-size: 18px;
+                            ">
+                  Copenhagen
+                </p>
+                <p style="
+                              margin-bottom: 10px;
+                              color: rgba(11, 11, 11, 0.91);
+                              font-size: 18px;
+                            ">
+                  Special Item: Burger,Cake
+                </p>
+                <a href="#" class="btn primary-bg restaurent-cart-btn">Map</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="m-2 restaurent-cart">
+              <p class="discount">20% OFF</p>
+              <img src="./img/Wine Shop.png" class="card-img-top" alt="..." />
+              <div class="card-body" style="padding: 10px">
+                <h5 class="card-title" style="margin-bottom: 10px; color: #000">
+                  Wine Shop
+                </h5>
+                <p style="
+                              margin-bottom: 10px;
+                              color: rgba(11, 11, 11, 0.91);
+                              font-size: 18px;
+                            ">
+                  Copenhagen
+                </p>
+                <p style="
+                              margin-bottom: 10px;
+                              color: rgba(11, 11, 11, 0.91);
+                              font-size: 18px;
+                            ">
+                  Special Item: Pizza,Burger,Cake
+                </p>
+                <a href="#" class="btn primary-bg restaurent-cart-btn">Map</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="restaurent-cart m-2">
+              <p class="discount">20% OFF</p>
+              <img src="./img/Delicious Food Court.png" class="card-img-top" alt="..." />
+              <div class="card-body" style="padding: 10px">
+                <h5 class="card-title" style="margin-bottom: 10px; color: #000">
+                  Delicious Food Court
+                </h5>
+                <p style="
+                              margin-bottom: 10px;
+                              color: rgba(11, 11, 11, 0.91);
+                              font-size: 18px;
+                            ">
+                  Copenhagen
+                </p>
+                <p style="
+                              margin-bottom: 10px;
+                              color: rgba(11, 11, 11, 0.91);
+                              font-size: 18px;
+                            ">
+                  Special Item: Tacos,Burger,Cake
+                </p>
+                <a href="#" class="btn primary-bg restaurent-cart-btn">Map</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="m-2 restaurent-cart">
+              <p class="discount">20% OFF</p>
+              <img src="./img/Rectangle 3.png" class="card-img-top" alt="..." />
+              <div class="card-body" style="padding: 10px">
+                <h5 class="card-title" style="margin-bottom: 10px; color: #000">
+                  Cake House
+                </h5>
+                <p style="
+                                          margin-bottom: 10px;
+                                          color: rgba(11, 11, 11, 0.91);
+                                          font-size: 18px;
+                                        ">
+                  Copenhagen
+                </p>
+                <p style="
+                                          margin-bottom: 10px;
+                                          color: rgba(11, 11, 11, 0.91);
+                                          font-size: 18px;
+                                        ">
+                  Special Item: Burger,Cake
+                </p>
+                <a href="#" class="btn primary-bg restaurent-cart-btn">Map</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discount -->
+
+  <section class="discount container">
+    <div class="discount-content">
+      <div class="discount-bg-opacity">
+        <p>EASY 2 EAT</p>
+        <h2>Discount 40%</h2>
+        <h3>All Special Item</h3>
+        <a class="primary-bg discount-btn" href="#">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ordering Now -->
+
+  <section class="ordering-now">
+    <div class="ordering-now-bg-opacity container">
+      <h2>Start Ordering Now</h2>
+      <div class="ordering-now-content row">
+        <div class="col-md-4 col-sm-12 col-md-6 col-lg-4">
+          <img src="./img/material-symbols-light_order-approve.png" alt="" />
+          <h3>Easly Order</h3>
+          <p>
+            Say goodbye to complexity and hello to the joy of easily placing
+            orders with just a few clicks.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12 col-md-6 col-lg-4 mt-md-0 mt-5">
+          <img src="./img/Quick Delivery.png" alt="" />
+          <h3>Quick Delivery</h3>
+          <p>
+            Our dedicated service ensures your favorites each your doorstep
+            promptly.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12 col-lg-4 col-md-6 mt-md-0 mt-5">
+          <img src="./img/Enjoy Food.png" alt="" />
+          <h3>Enjoy Food</h3>
+          <p>
+            Relish every bite – because good food is meant to be enjoyed and
+            unforgettable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Cities -->
+
+  <section class="top-cities">
+    <div class="container">
+      <h2>Top Cities</h2>
+      <div class="top-cities-list row row-cols-1 row-cols-lg-4 row-cols-md-3 g-2 g-lg-3">
+        <div class="col">
+          <div>
+            <h3>Herning</h3>
+            <a class="top-cities-list-arry" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <img class="top-cities-list-img" src="./img/Herning.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <h3>Koge</h3>
+            <a class="top-cities-list-arry" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <img class="top-cities-list-img" src="./img/Koge.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <h3>Tivoli Gardens</h3>
+            <a class="top-cities-list-arry" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <img class="top-cities-list-img" src="./img/Tivoli Gardens.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <h3>Nyhavn</h3>
+            <a class="top-cities-list-arry" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <img class="top-cities-list-img" src="./img/Nyhavn.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <h3>Copenhagen</h3>
+            <a class="top-cities-list-arry" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <img class="top-cities-list-img" src="./img/Copenhagen.png" alt="" />
+          </div>
+        </div>
+
+        <div class="col">
+          <div>
+            <h3>Koge</h3>
+            <a class="top-cities-list-arry" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <img class="top-cities-list-img" src="./img/Koge2.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <h3>Aarhus</h3>
+            <a class="top-cities-list-arry" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <img class="top-cities-list-img" src="./img/Aarhus.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <h3>Odense</h3>
+            <a class="top-cities-list-arry" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <img class="top-cities-list-img" src="./img/Odense.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <h3>Aalborg</h3>
+            <a class="top-cities-list-arry" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <img class="top-cities-list-img" src="./img/Aalborg.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <h3>Esbjerg</h3>
+            <a class="top-cities-list-arry" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <img class="top-cities-list-img" src="./img/Esbjerg.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEEP IN TOUCH / Footer -->
+
+  <section class="keep-in-touch">
+    <div class="container">
+      <div class="keep-in-touch-content">
+        <h2>KEEP IN TOUCH</h2>
+        <div class="keep-in-touch-form">
+          <form action="">
+            <div class="form-1">
+              <input type="text" name="" id="" placeholder="Your Name" />
+              <input type="email" name="" id="" placeholder="Your Email" />
+            </div>
+            <div class="form-2">
+              <input type="tel" name="" id="" placeholder="Your Phone Number" />
+              <input type="text" name="" id="" placeholder="Your Address" />
+            </div>
+            <div class="keep-in-touch-textarea">
+              <textarea name="" id="" cols="30" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <div>
+              <button class="primary-bg" type="submit">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="divaider my-5"></div>
+
+      <!-- footer -->
+
+      <div class="footer">
+        <div class="footer-content row">
+          <div class="col-lg-4 col-md-12 footer-content-1">
+            <h2>ABOUT</h2>
+            <p>
+              Welcome to 'Easy to Eat,' where culinary delights meet effortless
+              ordering. Our platform is designed for thosewho appreciate the
+              ease of enjoying delicious meals.
+            </p>
+            <div class="translate">
+              <p>English</p>
+              <img src="./img/translate.png" alt="" />
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 m-lg-0 mt-4 footer-content-2">
+            <h2>POPULAR CITIES</h2>
+            <ul>
+              <li><a href="#">Copenhagen</a></li>
+              <li><a href="#">Herning</a></li>
+              <li><a href="#">Koge</a></li>
+              <li><a href="#">Odense</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 m-lg-0 mt-4 footer-content-3">
+            <h2>POPULAR DISHES</h2>
+            <ul>
+              <li><a href="#">Pizza</a></li>
+              <li><a href="#">Burger</a></li>
+              <li><a href="#">Donut</a></li>
+              <li><a href="#">Wine</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 m-lg-0 mt-4 footer-content-4">
+            <h2>Contact</h2>
+            <ul>
+              <li><a href="#">Address: Mohammadpur,Dhaka Bangladesh</a></li>
+              <li><a href="#">Phone: 12345678</a></li>
+              <li><a href="#">Email: info@etakeout.dk</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="divaider mb-2 mt-5"></div>
+        <div class="copyright pb-2">
+          <p>© Copyright 2024. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
